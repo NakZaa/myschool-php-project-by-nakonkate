@@ -1,7 +1,7 @@
 # MYSCHOOL 
 
 This is a file to use with the 'myschool.sql' I provided.
-Appserv 8.6.0 (free) => https://www.appserv.org/en/
+You can get Appserv 8.6.0 here (free) => https://www.appserv.org/en/
 
 
 
