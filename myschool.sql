@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 04, 2019 at 02:04 AM
+-- Generation Time: Mar 04, 2019 at 02:33 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -33,17 +33,6 @@ CREATE TABLE `activity` (
   `act_remark` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `activity`
---
-
-INSERT INTO `activity` (`act_id`, `act_name`, `act_limit`, `act_remark`) VALUES
-(1, 'กฎหมาย', 20, ''),
-(2, 'English', 30, 'เฉพาะ ม.ต้น'),
-(3, 'ม.44', 10, 'เฉพาะ ม.4'),
-(4, 'อ่านหนังสือ', 15, ''),
-(5, 'esport', 10, '');
-
 -- --------------------------------------------------------
 
 --
@@ -61,17 +50,6 @@ CREATE TABLE `student` (
   `teacher_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `student`
---
-
-INSERT INTO `student` (`std_id`, `std_name`, `std_class`, `std_room`, `std_number`, `std_code`, `std_password`, `teacher_id`) VALUES
-(1, 'นาย นครเขต ตินตะบุระ', 1, 1, 3, '12123', '01234', 1),
-(2, 'เด็กชาย ธนัช เจตะวัฒนะ', 2, 1, 2, '5555', '12345', 2),
-(3, 'นาย สุรภูมิ มณีราชกิจ', 5, 5, 4, '6666', '987654', 2),
-(4, 'นาย กขคง เอบีซี', 3, 6, 5, '7777', '789456', 4),
-(5, 'นาย กรัฐมน ตรี', 4, 8, 5, '8888', '741852', 5);
-
 -- --------------------------------------------------------
 
 --
@@ -87,17 +65,6 @@ CREATE TABLE `teacher` (
   `teach_password` varchar(20) NOT NULL,
   `activity_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `teacher`
---
-
-INSERT INTO `teacher` (`teach_id`, `teach_name`, `teach_dep`, `teach_tel`, `teach_username`, `teach_password`, `activity_id`) VALUES
-(1, 'นายประยุทธ จันทร์อังคาร', 1, '0123456789', 'prayut@gmail.com', '12345', 1),
-(2, 'นายบิก ป้อม', 2, '9876543210', 'bigpom@gmail.com', '01234', 2),
-(3, 'นายศรี วารา', 3, '1122334455', 'sriwara@gmail.com', '112233', 3),
-(4, 'OK', 8, '5555555', 'lololol@gmail.com', '1122334455', 4),
-(5, 'เสี่ยง', 5, '0011223344', 'siang@gmail.com', '987654', 5);
 
 --
 -- Indexes for dumped tables
